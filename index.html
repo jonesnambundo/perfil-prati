@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    
+    <!-- HEADER -->
+    <header>
+      <div class="container nav-container">
+        <a href="#" class="logo">Jones<span>.</span></a>
+        
+        <ul class="nav-links" role="navigation" aria-label="Links principais">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#portfolio">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <main>
+      <div class="container hero-section">
+        <div class="text-content">
+          <p>Olá, eu sou o</p>
+          <h1>Jones Nambundo</h1>
+          <h2>Desenvolvedor Frontend</h2>
+          <div class="buttons">
+            <a href="#about" class="btn">Sobre Mim</a>
+            <a href="#portfolio" class="btn">Portfólio</a>
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener"
+              class="btn"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+        <div class="profile-pic" aria-hidden="true">
+          <img src="img/jones.JPG" alt="Foto de perfil de Jones Nambundo" />
+        </div>
+      </div>
+    </main>
+
+    <!-- ABOUT -->
+    <section class="about-section sec-padding" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>Sobre Mim</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="about-img">
+            <div class="img-box">
+              <img src="img/about.png" alt="Jones trabalhando ao computador" />
+            </div>
+          </div>
+          <div class="about-text">
+            <p>
+              Sou profissional formado em Sistemas de Informação, com 2 anos de
+              experiência no desenvolvimento Front-End web e mobile, com foco em
+              aplicações modernas, responsivas e voltadas à visualização de
+              dados em tempo real. Mestre em Engenharia Elétrica na UNIFEI, com
+              ênfase em sistemas embarcados e análise preditiva utilizando
+              técnicas de Machine Learning. Durante minha trajetória, desenvolvi
+              interfaces com React, Next.js, TypeScript e Vue.js, aplicando
+              testes automatizados com Jest, React Testing Library e Cypress.
+              Implementei soluções mobile com React Native, e possuo
+              conhecimentos nas linguagens Flutter, Kotlin e Swift. Apliquei
+              bibliotecas modernas como Tailwind CSS, Styled Components e
+              Bootstrap para estilização, além de ferramentas como Figma e Adobe
+              XD para UI/UX. Participei de times ágeis (Scrum), com
+              versionamento via Git/GitHub, integração de APIs RESTful,
+              prototipação de dashboards com Recharts e foco na performance
+              (Core Web Vitals). Sou proativo, colaborativo e movido por
+              desafios técnicos. Estou sempre em busca de aprimorar a
+              experiência do usuário com soluções funcionais, eficientes e de
+              alta qualidade.
+            </p>
+
+            <h3 id="skills">Skills</h3>
+            <div class="skills" aria-label="Habilidades">
+              <div class="skill-item">HTML5</div>
+              <div class="skill-item">CSS3</div>
+              <div class="skill-item">JavaScript</div>
+              <div class="skill-item">Bootstrap</div>
+              <div class="skill-item">React</div>
+              <div class="skill-item">Vue.js</div>
+              <div class="skill-item">React Native</div>
+              <div class="skill-item">Figma</div>
+              <div class="skill-item">Java</div>
+              <div class="skill-item">Sass</div>
+              <div class="skill-item">Less/Gulp</div>
+              <div class="skill-item">Jest</div>
+              <div class="skill-item">React Testing Library</div>
+              <div class="skill-item">Cypress</div>
+            </div>
+
+            <div class="about-tabs" role="tablist" aria-label="Abas">
+              <button
+                type="button"
+                class="tab-item"
+                data-target="#education"
+                role="tab"
+                aria-selected="false"
+              >
+                Education
+              </button>
+              <button
+                type="button"
+                class="tab-item active"
+                data-target="#experience"
+                role="tab"
+                aria-selected="true"
+              >
+                Experience
+              </button>
+            </div>
+
+            <!-- Education -->
+            <div class="tab-content" id="education" role="tabpanel">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="date">Março 2024 - Julho 2025</span>
+                  <h4>
+                    Mestrado em Engenharia Eléctrica: Universidade Federal de
+                    Itajuba<br />
+                    <span>Enfase a Computação</span>
+                  </h4>
+                </div>
+                <div class="timeline-item">
+                  <span class="date">Agosto 2021 - Dezembro 2023</span>
+                  <h4>
+                    Pós-graduação: Especialista em Redes de Telecomunicações<br />
+                    <span>Instituto Nacional de Telecomunicações, Inatel.</span>
+                  </h4>
+                </div>
+                <div class="timeline-item">
+                  <span class="date">Agosto 2008 - Dezembro 2012</span>
+                  <h4>
+                    Graduado : Sistemas, Redes e Seguranças Informáticas<br />
+                    <span
+                      >Instituto Internacional de Gestão (INSIM BEJAIA) -
+                      Argélia.</span
+                    >
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience -->
+            <div class="tab-content active" id="experience" role="tabpanel">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="date">Dezembro 2024 - Atual</span>
+                  <h4>Desenvolvedor Frontend - <span>Bolsista</span></h4>
+                  <p>
+                    • Desenvolvi interfaces modernas em React.js, Next.js,
+                    TypeScript e TailwindCSS em colaboração com designers no
+                    Figma. <br />
+                    • Implementação de formulários dinâmicos e acessíveis com
+                    React Hook , Form e validação com Yup. Integração com APIs
+                    RESTful e para manipulação e exibição de dados em tempo
+                    real. <br />
+                    • Apliquei testes automatizados com Jest, RTL, React Testing
+                    Library e Cypress para garantir qualidade e estabilidade.
+                    <br />
+                    • Monitoramento de erros e performance com ferramentas de
+                    observabilidade no front-end como Sentry (em fase
+                    experimental). <br />
+                    • Otimização de performance com foco em métricas como Core
+                    Web Vitals (Lighthouse, WebPageTest). <br />
+                    Colaboração com a equipe de produto em rituais ágeis
+                    (Scrum), participando de reuniões de planejamento, review e
+                    retrospectiva. <br />
+                    • Revisão de código, padronização e linting com ESLint e
+                    Prettier, promovendo boas práticas e coesão técnica. <br />
+                    • Prototipação e implementação de gráficos interativos com
+                    Recharts para exibição de dados estatísticos.
+                  </p>
+                </div>
+                <div class="timeline-item">
+                  <span class="date">Agosto 2022 - Atual</span>
+                  <h4>Desenvolvedor Frontend - <span>Autônomo</span></h4>
+                  <p>
+                    • Atuando como Tech
+                    Líder dos Desenvolvedores Frontend. <br>
+                    • Desenvolver interfaces
+                    em React/Next.js com TypeScript, em colaboração com a equipe
+                    de design. <br>
+                    • Implementação de formulários dinâmicos com
+                    React Hook Form e validações Yup. <br>
+                    • Integrar APIs RESTful e
+                    implementar formulários dinâmicos com React Hook Form <br> •
+                    Estilização com Tailwind CSS, Styled-Components 
+                    •Implementação de testes unitários e de integração. <br>
+                    • Revisão
+                    de código e estabelecimento de padrões com ESLint/Prettier. <br>
+                    •Participação em rituais ágeis (Scrum) e gestão de sprint, desenvolver e manter interfaces web utilizando as melhores
+                    práticas do mercado.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px"
+            >
+              <a href="cv.pdf" target="_blank" class="btn">Download CV</a>
+              <a href="#contact" class="btn">Contate-me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- PORTFÓLIO DETALHADO -->
+    <section
+      class="portfolio-section sec-padding"
+      id="portfolio"
+      aria-label="Portfólio detalhado"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="section-title"><h2>Trabalhos Recentes</h2></div>
+        </div>
+
+        <div class="row portfolio-grid">
+          <!-- Item -->
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img
+                src="img/1.jpg"
+                alt="Thumb - Landing Page Filmes e Séries"
+              />
+            </div>
+            <h3 class="portfolio-item-title">
+              Landing Page Filmes e Séries - React
+            </h3>
+            <button
+              type="button"
+              class="btn view-project-btn"
+              aria-haspopup="dialog"
+            >
+              View project
+            </button>
+
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                  Projeto pessoal usando interface do Figma e a API do TMDb.
+                  Roteamento, consumo de API, estilos com CSS/Styled Components
+                  e conceitos de React (Hooks, React Hook Form). Totalmente
+                  responsivo.
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Criado - <span>Outubro 2023</span></li>
+                  <li>
+                    Tecnologias -
+                    <span>HTML5, Styled-Components, JavaScript, React</span>
+                  </li>
+                  <li>
+                    View Online -
+                    <span
+                      ><a
+                        href="https://jonesreact-movies.vercel.app/"
+                        target="_blank"
+                        rel="noopener"
+                        >https://jonesreact-movies.vercel.app/</a
+                      ></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="img/13.jpg" alt="Thumb - E-commerce Eplay" />
+            </div>
+            <h3 class="portfolio-item-title">E-commerce - Eplay</h3>
+            <button
+              type="button"
+              class="btn view-project-btn"
+              aria-haspopup="dialog"
+            >
+              View project
+            </button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                  E-commerce com seleção de jogos, carrinho, dados de cobrança e
+                  pagamento (boleto/cartão).
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Criado - <span>Novembro 2024</span></li>
+                  <li>
+                    Tecnologias -
+                    <span
+                      >React Router, Styled-Components, TypeScript, Yup, Formik,
+                      Redux Toolkit, Prettier, ESLint</span
+                    >
+                  </li>
+                  <li>
+                    View Online -
+                    <span
+                      ><a
+                        href="https://eplay-site.vercel.app/"
+                        target="_blank"
+                        rel="noopener"
+                        >https://eplay-site.vercel.app/</a
+                      ></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img
+                src="img/2.jpg"
+                alt="Thumb - Site E-commerce Bootstrap"
+              />
+            </div>
+            <h3 class="portfolio-item-title">Site E-commerce - Bootstrap</h3>
+            <button
+              type="button"
+              class="btn view-project-btn"
+              aria-haspopup="dialog"
+            >
+              View project
+            </button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                  Landing page com grid responsivo (3 colunas desktop / 1
+                  mobile) e carrossel usando Bootstrap.
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Criado - <span>Dezembro 2023</span></li>
+                  <li>Tecnologias - <span>HTML, CSS, Bootstrap</span></li>
+                  <li>
+                    View Online -
+                    <span
+                      ><a
+                        href="https://projecto-site-gwears-bootstrap.vercel.app/"
+                        target="_blank"
+                        rel="noopener"
+                        >https://projecto-site-gwears-bootstrap.vercel.app/</a
+                      ></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img
+                src="img/11.jpg"
+                alt="Thumb - Dashboard Florestal"
+              />
+            </div>
+            <h3 class="portfolio-item-title">
+              Dashboard para Monitoramento de Equipamentos Florestais
+            </h3>
+            <button
+              type="button"
+              class="btn view-project-btn"
+              aria-haspopup="dialog"
+            >
+              View project
+            </button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                  Monitorar posição, estado e histórico de equipamentos em
+                  operações florestais.
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Criado - <span>Agosto 2024</span></li>
+                  <li>
+                    Tecnologias -
+                    <span
+                      >React, Styled-Components, TypeScript, ESLint, Prettier,
+                      Leaflet, ReactApexChart</span
+                    >
+                  </li>
+                  <li>
+                    View Online -
+                    <span
+                      ><a
+                        href="https://monitoring-lake.vercel.app/"
+                        target="_blank"
+                        rel="noopener"
+                        >https://monitoring-lake.vercel.app/</a
+                      ></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="img/7.jpg" alt="Thumb - E-commerce Redux" />
+            </div>
+            <h3 class="portfolio-item-title">E-commerce - React Redux</h3>
+            <button
+              type="button"
+              class="btn view-project-btn"
+              aria-haspopup="dialog"
+            >
+              View project
+            </button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                  Migração de useState para Redux Toolkit + RTK Query; slices
+                  para carrinho; useSelector/useDispatch.
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Criado - <span>Março 2024</span></li>
+                  <li>
+                    Tecnologias -
+                    <span
+                      >React Router, Styled-Components, TypeScript, Redux
+                      Toolkit, Prettier, ESLint, EditorConfig</span
+                    >
+                  </li>
+                  <li>
+                    View Online -
+                    <span
+                      ><a
+                        href="https://ebac-sports-teal.vercel.app/"
+                        target="_blank"
+                        rel="noopener"
+                        >https://ebac-sports-teal.vercel.app/</a
+                      ></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="img/12.jpg" alt="Thumb - Heróis da Marvel" />
+            </div>
+            <h3 class="portfolio-item-title">Projeto Heróis da Marvel</h3>
+            <button
+              type="button"
+              class="btn view-project-btn"
+              aria-haspopup="dialog"
+            >
+              View project
+            </button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                  Explorar heróis da Marvel, favoritar e ver detalhes. API
+                  Marvel. React + TS + styled-components.
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Criado - <span>Agosto 2024</span></li>
+                  <li>
+                    Tecnologias -
+                    <span
+                      >React, Styled-Components, TypeScript, ESLint,
+                      Prettier</span
+                    >
+                  </li>
+                  <li>
+                    View Online -
+                    <span
+                      ><a
+                        href="https://insta-carro-self.vercel.app/"
+                        target="_blank"
+                        rel="noopener"
+                        >https://insta-carro-self.vercel.app/</a
+                      ></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img
+                src="img/8.jpg"
+                alt="Thumb - Todo List React Redux"
+              />
+            </div>
+            <h3 class="portfolio-item-title">Todo List - React Redux</h3>
+            <button
+              type="button"
+              class="btn view-project-btn"
+              aria-haspopup="dialog"
+            >
+              View project
+            </button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                  Adicionar tarefas, prioridade, busca com filtro e contadores
+                  por prioridade.
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Criado - <span>Abril 2024</span></li>
+                  <li>Tecnologias - <span>React, Redux Toolkit</span></li>
+                  <li>
+                    View Online -
+                    <span
+                      ><a
+                        href="https://minhas-tarefas-flax-two.vercel.app/"
+                        target="_blank"
+                        rel="noopener"
+                        >https://minhas-tarefas-flax-two.vercel.app/</a
+                      ></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img
+                src="img/4.jpg"
+                alt="Thumb - Landing Page Evento"
+              />
+            </div>
+            <h3 class="portfolio-item-title">Landing Page para Evento</h3>
+            <button
+              type="button"
+              class="btn view-project-btn"
+              aria-haspopup="dialog"
+            >
+              View project
+            </button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                  Contagem regressiva (getTime, setInterval/clearInterval),
+                  gradientes e animações.
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Criado - <span>Novembro 2023</span></li>
+                  <li>
+                    Tecnologias -
+                    <span>HTML, CSS, JavaScript, Parcel, Sass, Less</span>
+                  </li>
+                  <li>
+                    View Online -
+                    <span
+                      ><a
+                        href="https://ebac-tech-talks-psi-gold.vercel.app/"
+                        target="_blank"
+                        rel="noopener"
+                        >https://ebac-tech-talks-psi-gold.vercel.app/</a
+                      ></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="img/5.jpg" alt="Thumb - Todo List Vue" />
+            </div>
+            <h3 class="portfolio-item-title">Todo List - Vue.js</h3>
+            <button
+              type="button"
+              class="btn view-project-btn"
+              aria-haspopup="dialog"
+            >
+              View project
+            </button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                  Renderização condicional, eventos, reatividade, listas e
+                  componentes reutilizáveis.
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Criado - <span>Dezembro 2023</span></li>
+                  <li>
+                    Tecnologias - <span>HTML5, CSS3, JavaScript, Vue.js</span>
+                  </li>
+                  <li>
+                    View Online -
+                    <span
+                      ><a
+                        href="https://todo-vue-rose-delta.vercel.app/"
+                        target="_blank"
+                        rel="noopener"
+                        >https://todo-vue-rose-delta.vercel.app/</a
+                      ></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="img/6.jpg" alt="Thumb - Calculadora Vue" />
+            </div>
+            <h3 class="portfolio-item-title">Calculadora - Vue.js</h3>
+            <button
+              type="button"
+              class="btn view-project-btn"
+              aria-haspopup="dialog"
+            >
+              View project
+            </button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                  Dois inputs, operação select e cálculo automático sem botão
+                  (reativo).
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Criado - <span>Dezembro 2023</span></li>
+                  <li>
+                    Tecnologias - <span>HTML, CSS, JavaScript, Vue.js</span>
+                  </li>
+                  <li>
+                    View Online -
+                    <span
+                      ><a
+                        href="https://calculadora-vuejs-psi.vercel.app/"
+                        target="_blank"
+                        rel="noopener"
+                        >https://calculadora-vuejs-psi.vercel.app/</a
+                      ></span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img
+                src="img/9.jpg"
+                alt="Thumb - App Gerador de Frases RN"
+              />
+            </div>
+            <h3 class="portfolio-item-title">
+              App Gerador de Frases - React Native
+            </h3>
+            <button
+              type="button"
+              class="btn view-project-btn"
+              aria-haspopup="dialog"
+            >
+              View project
+            </button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                  Lista de frases motivacionais exibidas aleatoriamente com
+                  componentes básicos do RN.
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Criado - <span>Agosto 2024</span></li>
+                  <li>
+                    Tecnologias -
+                    <span
+                      >React Native, Styled Components, JavaScript, TypeScript,
+                      Node.js</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item -->
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img
+                src="img/10.PNG"
+                alt="Thumb - App Delivery Food RN"
+              />
+            </div>
+            <h3 class="portfolio-item-title">
+              App Delivery Food - React Native
+            </h3>
+            <button
+              type="button"
+              class="btn view-project-btn"
+              aria-haspopup="dialog"
+            >
+              View project
+            </button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                  Explorar restaurantes, busca, banners com PagerView e fluxo de
+                  pedidos. Hooks e Tailwind.
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Criado - <span>Agosto 2024</span></li>
+                  <li>
+                    Tecnologias -
+                    <span
+                      >React Native, Tailwind CSS, JavaScript, TypeScript</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /portfolio-grid -->
+        </div>
+      </div>
+    </section>
+
+    <!-- POPUP -->
+    <div
+      class="portfolio-popup"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Detalhes do projeto"
+    >
+      <div class="pp-inner">
+        <div class="pp-content">
+          <div class="pp-header">
+            <button type="button" class="btn pp-close" aria-label="Fechar">
+              ×
+            </button>
+            <div class="pp-thumbnail">
+              <img src="" alt="Imagem do projeto selecionado" />
+            </div>
+            <h3 class="pp-title"></h3>
+          </div>
+          <div class="pp-body">
+            <div class="description"></div>
+            <div class="general-info"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- CONTATO -->
+  <section id="contact" class="sec-padding">
+    <div class="container">
+      <div class="section-title"><h2>Contato</h2></div>
+      <div class="contact-card">
+        <p>Aberto a oportunidades e colaborações. Vamos conversar?</p>
+        <div class="contact-links">
+          <a class="btn" href="mailto:seuemail@exemplo.com">Email</a>
+          <a class="btn" href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">© 2025 Jones Nambundo. Todos os direitos reservados.</div>
+  </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
